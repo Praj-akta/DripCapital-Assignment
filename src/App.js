@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Vlogs from "./components/Vlogs";
+import ApplicationHeader from './components/ApplicationHeader';
 import "./shared/index.scss";
 
 export default function App() {
@@ -8,7 +9,8 @@ export default function App() {
         <Router>
             <Switch>
                 <Route exact path="/">
-                    <Home />
+                    {/* <Home /> */}
+                    <ApplicationHeader />
                 </Route>
                 <Route path="/:entryId">
                     <Vlogs />
